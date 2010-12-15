@@ -1,0 +1,21 @@
+<h1>RescueTime - Darko Edition!</h1>
+<br/>
+<%= render 'form' %>
+
+<table>
+  <tr>
+    <th>Running history</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @darkos.each do |darko| %>
+  <tr>
+    <td><%= darko.status %></td>
+	<td><%= darko.created_at %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
