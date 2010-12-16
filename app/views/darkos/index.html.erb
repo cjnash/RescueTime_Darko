@@ -5,17 +5,11 @@
 <table>
   <tr>
     <th>Running history</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
-
 <% @darkos.each do |darko| %>
   <tr>
-    <td><%= darko.status %></td>
-	<td><%= darko.created_at %></td>
+  	<td valign="top"><span class="hesaidwhen"><%= darko.created_at.strftime("%B %d, %I:%M %p") %></span></td>
+    <td valign="top"><span class="hesaidwhat">&#8220;<%= darko.status %>&#8221;</span><br/></td>
   </tr>
 <% end %>
 </table>
-
-<br />
