@@ -1,7 +1,7 @@
 body { background-color: #12212c; color: #EEE; }
 
 body, a, p, ol, ul, td, span, textarea{
-  font: 12px/20px Arial, "Lucida Grande", Verdana, sans-serif;
+  font: 14px/22px Arial, "Lucida Grande", Verdana, sans-serif;
   text-shadow:#000 0px 0px 1px;
 }
 
@@ -50,6 +50,7 @@ a:visited { color: #666; }
 a:hover { color: #fff; background-color:#000; }
 
 div.field, div.actions {
+  font-size:  18px;
   margin-bottom: 10px;
 }
 
