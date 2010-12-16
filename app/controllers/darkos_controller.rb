@@ -2,8 +2,8 @@ class DarkosController < ApplicationController
   # GET /darkos
   # GET /darkos.xml
   def index
-    @darkos = Darko.all(:order => 'created_at DESC', :limit => '20')
-    @darko = Darko.new
+      @darkos = Darko.all(:order => 'created_at DESC', :limit => '20')
+      @darko = Darko.new
     
     respond_to do |format|
         format.html

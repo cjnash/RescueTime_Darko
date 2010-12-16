@@ -11,8 +11,34 @@ h1, h2, h3, h4, h5, h6 {
 
 .darko {float:left;}
 
+label {
+	font-size:18px;
+	font-style: italic;
+}
+
+.darkoit {
+	background-color: #FFF;
+	border: 2px solid #FC0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+	padding: 5px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+
+.darkoit:hover {
+	background-color: rgba(81, 203, 238, 1);
+  border:#35a5e5 2px solid;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+	padding: 5px;
+}
+
 .hesaidwhat {font-size:1.25em;}
-.hesaidwhen {opacity:0.5; font-size:0.8em;}
+.hesaidwhen {font-size:0.8em; opacity:0.5;}
 
 textarea {
   border-radius: 10px;
@@ -22,7 +48,7 @@ textarea {
   padding:10px;
   height:85px;
   width:375px;
-  border:#999 1px solid;
+  border:#FC0 2px solid;
   transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -31,9 +57,9 @@ textarea {
   -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
 }
 
-textarea:focus {
+textarea:hover, textarea:focus {
   outline:none;
-  border:#35a5e5 1px solid;
+  border:#35a5e5 2px solid;
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
