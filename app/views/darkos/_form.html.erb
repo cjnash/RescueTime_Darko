@@ -1,8 +1,7 @@
 <%= form_for(@darko) do |f| %>
   <% if @darko.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@darko.errors.count, "error") %> prohibited this darko from being saved:</h2>
-
+      <h2><%= pluralize(@darko.errors.count, "error") %> prohibited this Darko item from being saved:</h2>
       <ul>
       <% @darko.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -13,7 +12,7 @@
 
   <div class="field">
     <%= f.label 'What did Darko just ask you about?' %><br />
-    <%= f.text_area :status %>
+    <%= f.text_area :status, :maxlength => "140" %>
   </div>
   <div class="actions">
     <%= f.submit 'Add your update' %>
