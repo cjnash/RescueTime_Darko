@@ -45,7 +45,7 @@ class DarkosController < ApplicationController
 
     respond_to do |format|
       if @darko.save
-        format.html { redirect_to (darkos_path) }
+        format.html { redirect_to (darkos_path), :notice => 'Thanks for adding to the legacy.' }
         format.xml  { render :xml => @darko, :status => :created, :location => @darko }
       else
         format.html { render :action => "new" }

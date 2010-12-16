@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label 'What did Darko just ask you about?' %><br />
-    <%= f.text_area :status %>
+    <%= f.text_area :status, "rows" => 3, "cols" => 60 %>
   </div>
   <div class="actions">
     <%= f.submit 'Add your update' %>
