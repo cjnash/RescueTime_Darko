@@ -1,6 +1,6 @@
 body { background-color: #12212c; color: #EEE; }
 
-body, p, ol, ul, td {
+body, a, p, ol, ul, td, span, textarea{
   font: 12px/20px Arial, "Lucida Grande", Verdana, sans-serif;
   text-shadow:#000 0px 0px 1px;
 }
@@ -9,8 +9,8 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow:#000 0px 1px 2px;
 }
 
+.darko {float:left;}
 
-.grey {color: #1a1a1a;}
 .hesaidwhat {font-size:1.25em;}
 .hesaidwhen {opacity:0.5; font-size:0.8em;}
 
@@ -18,13 +18,10 @@ textarea {
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  color:#666;
-  font-size:14px;
-
-  margin:5px 0px 10px 0px;
+  font-size:16px;
   padding:10px;
-  height:75px;
-  width:350px;
+  height:85px;
+  width:375px;
   border:#999 1px solid;
   transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
@@ -35,15 +32,12 @@ textarea {
 }
 
 textarea:focus {
-  color:#000;
   outline:none;
   border:#35a5e5 1px solid;
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }
-
-
 
 pre {
   background-color: #eee;
