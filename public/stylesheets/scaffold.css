@@ -57,7 +57,7 @@ textarea {
   -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
 }
 
-textarea:focus {
+textarea:hover, textarea:focus {
   outline:none;
   border:#35a5e5 2px solid;
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
