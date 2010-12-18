@@ -1,0 +1,130 @@
+body { background-color: #12212c; color: #EEE; }
+
+body, a, p, ol, ul, td, span, textarea{
+  font: 14px/22px Arial, "Lucida Grande", Verdana, sans-serif;
+  text-shadow:#000 0px 0px 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-shadow:#000 0px 1px 2px;
+}
+
+.darko {
+  float:left;
+}
+
+label {
+	font-size:18px;
+	font-style: italic;
+}
+
+.darkoit {
+	background-color: #FFF;
+	border: 2px solid #FC0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+	padding: 5px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  box-shadow: 0 0 15px rgba(81, 203, 238, 0);
+  -webkit-box-shadow: 0 0 15px rgba(81, 203, 238, 0);
+  -moz-box-shadow: 0 0 15px rgba(81, 203, 238, 0);
+}
+
+.darkoit:hover {
+	background-color: #FFF;
+  border:#35a5e5 2px solid;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+	padding: 5px;
+  box-shadow: 0 0 15px rgba(81, 203, 238, 1);
+  -webkit-box-shadow: 0 0 15px rgba(81, 203, 238, 1);
+  -moz-box-shadow: 0 0 15px rgba(81, 203, 238, 1);
+}
+
+.hesaidwhat {font-size:1.25em;}
+.hesaidwhen {font-size:0.8em; opacity:0.5;}
+
+textarea {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  font-size:16px;
+  padding:10px;
+  height:85px;
+  width:375px;
+  border:#FC0 2px solid;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  box-shadow: 0 0 15px rgba(81, 203, 238, 0);
+  -webkit-box-shadow: 0 0 15px rgba(81, 203, 238, 0);
+  -moz-box-shadow: 0 0 15px rgba(81, 203, 238, 0);
+}
+
+textarea:hover, textarea:focus {
+  outline:none;
+  border:#35a5e5 2px solid;
+  box-shadow: 0 0 15px rgba(81, 203, 238, 1);
+  -webkit-box-shadow: 0 0 15px rgba(81, 203, 238, 1);
+  -moz-box-shadow: 0 0 15px rgba(81, 203, 238, 1);
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+div.field, div.actions {
+  font-size:  18px;
+  margin-bottom: 10px;
+}
+
+.field_timestamp {
+	font-size: 10px
+	color: gray;
+}
+
+#notice {
+  color: green;
+  font-size:	24px;
+}
+
+.field_with_errors {
+  padding: 4px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
