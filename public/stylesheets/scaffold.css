@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .darko {
   float:left;
-  margin-left:20px;
+  margin-left:15px;
 }
 
 label {
@@ -58,16 +58,15 @@ label {
 
 .hesaidwhat {
 	margin-left:25px;
-	font-size:1.25em;
-	padding-bottom:50px;
+	font-size:1em;
 }
 
 .hesaidwhen {
 	font-size:0.8em; 
 	opacity:0.5;
-	margin-left:165px;
-	margin-right:10px;
-	padding-bottom:3px;
+	margin-left:160px;
+	margin-right:5px;
+	padding-bottom:5px;
 }
 
 textarea {
