@@ -9,16 +9,27 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow:#000 0px 1px 2px;
 }
 
+.darkoheader {
+	padding-top:30px;
+	padding-bottom:10px;
+	margin-left:162px;
+	font-size:48px;
+	}
+
 .darko {
   float:left;
+  margin-left:20px;
 }
 
 label {
+	margin-left:0px;
 	font-size:18px;
 	font-style: italic;
 }
 
 .darkoit {
+	margin-left:310px;
+	margin-bottom:3px;
 	background-color: #FFF;
 	border: 2px solid #FC0;
   border-radius: 5px;
@@ -45,8 +56,19 @@ label {
   -moz-box-shadow: 0 0 15px rgba(81, 203, 238, 1);
 }
 
-.hesaidwhat {font-size:1.25em;}
-.hesaidwhen {font-size:0.8em; opacity:0.5;}
+.hesaidwhat {
+	margin-left:25px;
+	font-size:1.25em;
+	padding-bottom:50px;
+}
+
+.hesaidwhen {
+	font-size:0.8em; 
+	opacity:0.5;
+	margin-left:165px;
+	margin-right:10px;
+	padding-bottom:3px;
+}
 
 textarea {
   border-radius: 10px;
@@ -91,6 +113,7 @@ div.field, div.actions {
 .field_timestamp {
 	font-size: 10px
 	color: gray;
+	margin-right: 5px;
 }
 
 #notice {
