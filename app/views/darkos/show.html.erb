@@ -1,15 +1,9 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Status:</b>
-  <%= @darko.status_id %>
-</p>
-
-<p>
-  <b>Status:</b>
-  <%= @darko.status %>
-</p>
-
-
-<%= link_to 'Edit', edit_darko_path(@darko) %> |
-<%= link_to 'Back', darkos_path %>
+<% begin %>
+<div id="container">
+  <blockquote class="example-right">
+    <p><%= @darko.status %></p>
+  </blockquote>
+  <p><%= link_to image_tag("/images/darko-head.png", :alt => "Darko", :height => "159", :width => "142", :align => "absmiddle"), root_path %> Darko</p>
+</div>
+<% rescue %><p>Something has gone wrong. Let Chris or Doug know and get a prize.</p>
+<% end %>

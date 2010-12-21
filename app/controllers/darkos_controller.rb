@@ -8,7 +8,17 @@ class DarkosController < ApplicationController
     respond_to do |format|
         format.html
         format.xml  { render :xml => @darko }
+        format.rss { render :layout => false } #index.rss.builder
     end
+  end
+
+  def feed
+    @darko = Darko.all(:select => "darko.status, darko.created_at", :order => "darko.created_at DESC", :limit => 100)
+
+      respond_to do |format|
+        format.html
+        format.rss { render :layout => false } #index.rss.builder
+      end
   end
 
   # GET /darkos/1

@@ -1,12 +1,64 @@
-body { background: #12212c url('/images/bg-pixel-pattern.png'); color: #EEE; }
+body { background: #12212c url('/images/bg-pixel-pattern.png'); color: #FFF; }
 
 body, a, p, ol, ul, td, span, textarea{
   font: 14px/22px Arial, "Lucida Grande", Verdana, sans-serif;
   text-shadow:#000 0px 0px 1px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-shadow:#000 0px 1px 2px;
+label {
+  font-family: "orgovan-rounded-web-1","orgovan-rounded-web-2", Arial, "Lucida Grande", Verdana, sans-serif;
+  color: #FC0;
+  text-shadow:#000 0px 1px 5px;
+}
+
+h1, h2, h3, h4, h5, h6, th {
+  text-shadow:#000 0px 1px 5px;
+}
+
+th {
+  font-size: 1.75em;
+}
+.darkoit, th, blockquote p {
+  font-family: "orgovan-rounded-web-1","orgovan-rounded-web-2", Arial, "Lucida Grande", Verdana, sans-serif;
+}
+.darkoit {
+  background-color: #FFF;
+	border: 2px solid #FC0;
+  border-radius: 5px;
+  color: #000;
+  font-size:1.25em;
+
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+	padding: 10px;
+	text-decoration: none;
+  text-shadow:#FC0 0px 0px 3px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+	margin-left: 270px;
+	position: relative;
+	top: 5px;
+
+  box-shadow: 0 0 15px rgba(81, 203, 238, 0);
+  -webkit-box-shadow: 0 0 15px rgba(81, 203, 238, 0);
+  -moz-box-shadow: 0 0 15px rgba(81, 203, 238, 0);
+}
+
+.darkoit:hover {
+  color: #000;
+	background-color: #FFF;
+  border:#35a5e5 2px solid;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+	padding: 10px;
+	text-decoration: none;
+  text-shadow:#35a5e5 0px 0px 3px;
+
+  box-shadow: 0 0 15px rgba(81, 203, 238, 1);
+  -webkit-box-shadow: 0 0 15px rgba(81, 203, 238, 1);
+  -moz-box-shadow: 0 0 15px rgba(81, 203, 238, 1);
 }
 
 .darkoheader {
@@ -14,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom:10px;
 	margin-left:162px;
 	font-size:48px;
-	}
+}
 
 .darko {
   float:left;
@@ -27,46 +79,34 @@ label {
 	font-style: italic;
 }
 
-.darkoit {
-	margin-left:310px;
-	margin-bottom:3px;
-	background-color: #FFF;
-	border: 2px solid #FC0;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-	padding: 5px;
-  transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  box-shadow: 0 0 15px rgba(81, 203, 238, 0);
-  -webkit-box-shadow: 0 0 15px rgba(81, 203, 238, 0);
-  -moz-box-shadow: 0 0 15px rgba(81, 203, 238, 0);
-}
-
-.darkoit:hover {
-	background-color: #FFF;
-  border:#35a5e5 2px solid;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-	padding: 5px;
-  box-shadow: 0 0 15px rgba(81, 203, 238, 1);
-  -webkit-box-shadow: 0 0 15px rgba(81, 203, 238, 1);
-  -moz-box-shadow: 0 0 15px rgba(81, 203, 238, 1);
-}
-
 .hesaidwhat {
 	margin-left:25px;
 	font-size:1em;
 }
 
 .hesaidwhen {
-	font-size:0.8em; 
-	opacity:0.5;
 	margin-left:160px;
 	margin-right:5px;
 	padding-bottom:5px;
+}
+
+.hesaidwhen a, .hesaidwhen a:visited {
+  font-size: 0.7em;
+}
+
+a, a:visited {
+	color: #FC0;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+
+a:hover {
+	color: rgba(81, 203, 238, 1);
+  outline:none;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
 }
 
 textarea {
@@ -94,25 +134,58 @@ textarea:hover, textarea:focus {
   -moz-box-shadow: 0 0 15px rgba(81, 203, 238, 1);
 }
 
+#container {width: 500px; margin-left: 20px;}
+blockquote {margin:1em 0;}
+blockquote p {
+    font-size: 2em;
+    margin: 0;
+    text-shadow:#000 0px 1px 2px;
+    line-height: 1.15em;
+}
+
+.example-right {
+	position:relative;
+	padding:15px 30px;
+	margin:0;
+	color:#fff;
+	background:#5a8f00; /* default background for browsers without gradient support */
+  
+	/* css3 */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	/* NOTE: webkit gradient implementation is not as per spec */
+	background:-webkit-gradient(linear, left top, left bottom, from(#FF9900), to(#FC0));
+	background:-moz-linear-gradient(top, #FF9900, #FC0);
+	background:-o-linear-gradient(top, #FF9900, #FC0);
+}
+
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+.example-right + p {margin:15px 0 2em 85px; font-style:italic;}
+
+/* creates the triangle */
+.example-right:after {
+	content:"";
+	display:block; /* reduce the damage in FF3.0 */
+	position:absolute;
+	bottom:-50px;
+	left:50px;
+	width:0;
+	height:0;
+	border-width:0 20px 50px 0px;
+	border-style:solid;
+	border-color:transparent #FC0;
+}
+
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
 
-a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
-
 div.field, div.actions {
   font-size:  18px;
   margin-bottom: 10px;
-}
-
-.field_timestamp {
-	font-size: 10px
-	color: gray;
-	margin-right: 5px;
 }
 
 #notice {
