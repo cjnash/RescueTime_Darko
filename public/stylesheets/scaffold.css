@@ -224,6 +224,7 @@ div.field, div.actions {
 }
 
 #error_explanation ul li {
+  color: red;
   font-size: 12px;
   list-style: square;
 }
