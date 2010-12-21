@@ -1,17 +1,12 @@
 <% begin %>
   <%= render 'form' %>
-  <table>
-    <tr>
-      <th><div class="hesaidwhen">History</div></th>
-    </tr>
+  <div id="indexcontainer">
+  <h2>History</h2>
   <% @darkos.each do |darko| %>
-    <tr>
-    	<td valign="top"><span class="hesaidwhen"><%= link_to darko.created_at.strftime("%B %d, %I:%M %p"), darko %></span></td>
-      <td valign="top"><span class="hesaidwhat">&#8220;<%= darko.status %>&#8221;</span><br/></td>
-    </tr>
-  </table>
+    <span class="hesaidwhen"><%= link_to darko.created_at.strftime("%B %d, %I:%M %p"), darko %></span> <span class="hesaidwhat">&#8220;<%= darko.status %>&#8221;</span><br/>
   <% end %>
-
+  <p>Follow <a href="/darkos.rss">DarkoTime updates</a> in real-time via RSS</p>
+  </div>
 <% rescue %>
 <p>Something has gone wrong. Let Chris or Doug know and get a prize.</p>
 <% end %>
