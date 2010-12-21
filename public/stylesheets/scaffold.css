@@ -1,4 +1,4 @@
-body { background-color: #12212c; color: #EEE; }
+body { background: #12212c url('/images/bg-pixel-pattern.png'); color: #EEE; }
 
 body, a, p, ol, ul, td, span, textarea{
   font: 14px/22px Arial, "Lucida Grande", Verdana, sans-serif;
