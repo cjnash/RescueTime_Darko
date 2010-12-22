@@ -1,4 +1,7 @@
-body { background: #12212c url('/images/bg-pixel-pattern.png'); color: #FFF; }
+body {
+  background-color: #12212c;
+  color: #FFF;
+}
 
 body, a, p, ol, ul, td, span, textarea{
   font: 14px/22px Arial, "Lucida Grande", Verdana, sans-serif;
@@ -66,13 +69,15 @@ th {
   -moz-box-shadow: 0 0 15px rgba(81, 203, 238, 1);
 }
 
+.darkoheader {
+  padding-top:10px;
+	margin-left:162px;
+}
+
 .darkoheader a, .darkoheader a:visited {
   color: #FFF;
   text-decoration: none;
   text-shadow:#000 0px 1px 5px;
-	padding-top:30px;
-	padding-bottom:10px;
-	margin-left:162px;
 	font-size:48px;
 }
 
@@ -94,7 +99,7 @@ label {
 }
 
 .hesaidwhat {
-	margin-left:25px;
+	margin-left:20px;
 	font-size:1em;
 }
 
