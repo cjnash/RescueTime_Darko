@@ -8,6 +8,8 @@ body, a, p, ol, ul, td, span, textarea{
   text-shadow:#000 0px 0px 1px;
 }
 
+img {border: 0;}
+
 label {
   font-family: "orgovan-rounded-web-1","orgovan-rounded-web-2", Arial, "Lucida Grande", Verdana, sans-serif;
   color: #FC0;
