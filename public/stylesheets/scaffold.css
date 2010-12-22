@@ -79,11 +79,17 @@ th {
   text-decoration: none;
   text-shadow:#000 0px 1px 5px;
 	font-size:48px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
 }
 
 .darkoheader a:hover {
   color: #FFF;
   text-shadow:#35a5e5 0px 1px 5px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
 }
 
 .darko {
