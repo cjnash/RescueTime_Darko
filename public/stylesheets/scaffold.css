@@ -1,9 +1,14 @@
-body { background: #12212c url('/images/bg-pixel-pattern.png'); color: #FFF; }
+body {
+  background-color: #12212c;
+  color: #FFF;
+}
 
 body, a, p, ol, ul, td, span, textarea{
   font: 14px/22px Arial, "Lucida Grande", Verdana, sans-serif;
   text-shadow:#000 0px 0px 1px;
 }
+
+img {border: 0;}
 
 label {
   font-family: "orgovan-rounded-web-1","orgovan-rounded-web-2", Arial, "Lucida Grande", Verdana, sans-serif;
@@ -23,7 +28,7 @@ h2 {
 th {
   font-size: 1.75em;
 }
-.darkoit, th, blockquote p {
+.darkoit, .darkoheader, .darkoheader a, th, blockquote p {
   font-family: "orgovan-rounded-web-1","orgovan-rounded-web-2", Arial, "Lucida Grande", Verdana, sans-serif;
 }
 .darkoit {
@@ -67,10 +72,26 @@ th {
 }
 
 .darkoheader {
-	padding-top:30px;
-	padding-bottom:10px;
+  padding-top:10px;
 	margin-left:162px;
+}
+
+.darkoheader a, .darkoheader a:visited {
+  color: #FFF;
+  text-decoration: none;
+  text-shadow:#000 0px 1px 5px;
 	font-size:48px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+
+.darkoheader a:hover {
+  color: #FFF;
+  text-shadow:#35a5e5 0px 1px 5px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
 }
 
 .darko {
@@ -86,7 +107,7 @@ label {
 }
 
 .hesaidwhat {
-	margin-left:25px;
+	margin-left:20px;
 	font-size:1em;
 }
 
@@ -139,7 +160,7 @@ textarea:hover, textarea:focus {
   -moz-box-shadow: 0 0 15px rgba(81, 203, 238, 1);
 }
 
-#container {width: 500px; margin-left: 50px; margin-top: 50px;}
+#container {width: 500px; margin-left: 50px; margin-top: 20px;}
 blockquote {margin:1em 0;}
 blockquote p {
     font-size: 2em;
