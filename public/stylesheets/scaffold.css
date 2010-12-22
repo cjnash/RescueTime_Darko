@@ -23,7 +23,7 @@ h2 {
 th {
   font-size: 1.75em;
 }
-.darkoit, th, blockquote p {
+.darkoit, .darkoheader, .darkoheader a, th, blockquote p {
   font-family: "orgovan-rounded-web-1","orgovan-rounded-web-2", Arial, "Lucida Grande", Verdana, sans-serif;
 }
 .darkoit {
@@ -66,11 +66,19 @@ th {
   -moz-box-shadow: 0 0 15px rgba(81, 203, 238, 1);
 }
 
-.darkoheader {
+.darkoheader a, .darkoheader a:visited {
+  color: #FFF;
+  text-decoration: none;
+  text-shadow:#000 0px 1px 5px;
 	padding-top:30px;
 	padding-bottom:10px;
 	margin-left:162px;
 	font-size:48px;
+}
+
+.darkoheader a:hover {
+  color: #FFF;
+  text-shadow:#35a5e5 0px 1px 5px;
 }
 
 .darko {
